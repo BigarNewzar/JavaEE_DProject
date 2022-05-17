@@ -14,8 +14,8 @@
         <meta name="keywords"  content="Tv purchase, Enquire" />
         <meta name="author"  content="S M Ragib Rezwan" />
 
-        <link href="styles/style.css" rel="stylesheet"/>
-        <link rel="icon" href="images/logoMain.png" type="image/x-icon"/>
+        <link href="cssStyle/cssMain.css" rel="stylesheet"/>
+        <link rel="icon" href="/Ragib-war/images/logoMain.png" type="image/x-icon"/>
         <!--refernece: https://www.w3schools.com/tags/att_link_sizes.asp -->
         <!--it adds a logo beside tab bar-->
         <title>Ragib Televisions (Enquire)</title> 
@@ -29,7 +29,7 @@
             <a href="admin/managerLogin.xhtml"> Manager</a>
             <hr/>
         </nav>
-        <aside> <!--put advert here to right of page-->
+        <aside id="right"> <!--put advert here to right of page-->
             <figure>
 
                 <a href="https://www.primevideo.com/region/eu" >
@@ -57,11 +57,12 @@
                             </td>
                             <td>
                                 <h:inputText id="transaction_id" 
-                                             maxlength="10"
+                                             maxlength="5"
                                              required="true"
                                              requiredMessage="Please Enter the Transaction Id given to you by the employee"
-                                             value="#{myCustomerManagedBean.transaction_id}">
-                                    <f:validateLength minimum="1" maximum="10"/>
+                                             value="#{myCustomerManagedBean.transaction_id}"
+                                             validatorMessage="Transaction Id must be 5 digits"> 
+                                    <f:validateRegex pattern="^\d{5}$"/>
                                 </h:inputText>
                             </td>
                             <td>
@@ -80,8 +81,8 @@
                                              required="true"
                                              requiredMessage="Please Enter your first name"
                                              value="#{myCustomerManagedBean.firstname}"
-                                             validatorMessage="Please shorten your first name">
-                                    <f:validateLength minimum="1" maximum="20"/>
+                                             validatorMessage="Firstname can only be alphabet and must not exceed 20 characters!">
+                                    <f:validateRegex pattern="^[A-Za-z]{1,20}$"/>
                                 </h:inputText>
                             </td>
                             <td>
@@ -100,8 +101,8 @@
                                              required="true"
                                              requiredMessage="Please Enter your last name"
                                              value="#{myCustomerManagedBean.lastname}"
-                                             validatorMessage="Please shorten your last name">
-                                    <f:validateLength minimum="1" maximum="20"/>
+                                             validatorMessage="Lastname can only be alphabet and must not exceed 20 characters!">
+                                    <f:validateRegex pattern="^[A-Za-z]{1,20}$"/>
                                 </h:inputText>
                             </td>
                             <td>
@@ -140,8 +141,10 @@
                                              maxlength="20"
                                              required="true"
                                              requiredMessage="Please Enter your Address"
-                                             value="#{myCustomerManagedBean.address}">                                        
+                                             value="#{myCustomerManagedBean.address}"> 
+                                    <f:validateLength minimum="1" maximum="30"/>
                                 </h:inputText>
+                                <!--no need regex for address as it can have special characters in them-->
                             </td>
                             <td>
                                 <h:message for="address" style="color:red"/>
@@ -153,12 +156,14 @@
                                 <h:outputLabel value="Suburb:"/>
                             </td>
                             <td>
-                                <h:inputText id="Suburb" 
+                                <h:inputText id="suburb" 
                                              maxlength="20"
                                              required="true"
                                              requiredMessage="Please Enter your Suburb"
-                                             value="#{myCustomerManagedBean.suburb}">                                        
+                                             value="#{myCustomerManagedBean.suburb}">     
+                                    <f:validateLength minimum="1" maximum="30"/>
                                 </h:inputText>
+                                <!--no need regex for suburb as it can have special characters in them-->
                             </td>
                             <td>
                                 <h:message for="suburb" style="color:red"/>
@@ -256,7 +261,9 @@
                                              maxlength="20"
                                              required="true"
                                              requiredMessage="Please Enter the comment you have regarding the product/ transaction"
-                                             value="#{myCustomerManagedBean.comment}">                                         
+                                             value="#{myCustomerManagedBean.comment}">  
+                                    <f:validateLength minimum="1" maximum="100"/>
+                                    <!--no need regex for comment as it can have special characters in them-->
                                 </h:inputText>
                             </td>
                             <td>
