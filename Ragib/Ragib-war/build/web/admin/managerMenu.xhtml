@@ -11,15 +11,15 @@
         <meta name="keywords"  content="Tv purchase, manager" />
         <meta name="author"  content="S M Ragib Rezwan" />
 
-        <link href="styles/style.css" rel="stylesheet"/>
-        <link rel="icon" href="images/logoMain.png" type="image/x-icon"/>
+         <link href="/Ragib-war/cssStyle/cssMain.css" rel="stylesheet"/>
+        <link rel="icon" href="/Ragib-war/images/logoMain.png" type="image/x-icon"/>
         <!--refernece: https://www.w3schools.com/tags/att_link_sizes.asp -->
         <!--it adds a logo beside tab bar-->
         <title>Ragib Televisions (Manager)</title>
     </h:head>
     <h:body>
 
-
+<section id="Faq">
         <h1>
             <h:outputText value="Customer Transaction Management System"/>
         </h1>
@@ -30,7 +30,7 @@
 
         <ol>
             <li>
-                <h:outputLink value="admin/viewTransactionId.xhtml">
+                <h:outputLink value="/Ragib-war/admin/viewTransactionId.xhtml">
                    View Transactions
                 </h:outputLink>
             </li>
@@ -40,7 +40,7 @@
         <h:form>
             Click <h:commandButton value="Logout" action="#{myLoginManagedBean.logoutResult()}"/>           
         </h:form>
-        
+        </section>
     </h:body>
 </html>
 

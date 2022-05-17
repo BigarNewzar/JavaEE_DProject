@@ -11,13 +11,13 @@
         <meta name="keywords"  content="Tv purchase, managerLogin" />
         <meta name="author"  content="S M Ragib Rezwan" />
 
-        <link href="styles/style.css" rel="stylesheet"/>
-        <link rel="icon" href="images/logoMain.png" type="image/x-icon"/>
+         <link href="/Ragib-war/cssStyle/cssMain.css" rel="stylesheet"/>
+        <link rel="icon" href="/Ragib-war/images/logoMain.png" type="image/x-icon"/>
         <!--refernece: https://www.w3schools.com/tags/att_link_sizes.asp -->
         <!--it adds a logo beside tab bar-->
         <title>Ragib Televisions (ManagerLogin)</title>
     </h:head>
-
+<section id="Manager">
     <h1>
         Manager Login
     </h1>
@@ -29,8 +29,7 @@
     <h2>
         Manager Login Page
     </h2>
-
-    <!-- form method="post" action="j_security_check?/ED-Secure-war/faces/protected/mainmenu.xhtml" -->
+<!--reference: https://www.tutorialspoint.com/jsp/jsp_security.htm-->
     <form method="post" action="j_security_check">
         <p>
             <h:outputLabel for="j_username" value="Username"/>
@@ -50,8 +49,7 @@
             </h:form>
         </p>
     </form>
-    
-    
+</section>
     
     
 </html>
