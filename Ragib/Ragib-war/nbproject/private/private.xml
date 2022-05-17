@@ -19,8 +19,11 @@
         <group>
             <file>file:/C:/Users/User/Desktop/year2_semester_1_stuff/cos30041/all_labs/D/all_work_manager_only_views/Ragib/Ragib-war/web/WEB-INF/faces-config.xml</file>
             <file>file:/C:/Users/User/Desktop/year2_semester_1_stuff/cos30041/all_labs/D/all_work_manager_only_views/Ragib/Ragib-war/web/WEB-INF/beans.xml</file>
+            <file>file:/C:/Users/User/Desktop/year2_semester_1_stuff/cos30041/all_labs/D/all_work_manager_only_views/Ragib/Ragib-war/web/admin/managerLogin.xhtml</file>
+            <file>file:/C:/Users/User/Desktop/year2_semester_1_stuff/cos30041/all_labs/D/all_work_manager_only_views/Ragib/Ragib-war/web/enquire.xhtml</file>
             <file>file:/C:/Users/User/Desktop/year2_semester_1_stuff/cos30041/all_labs/D/all_work_manager_only_views/Ragib/Ragib-war/src/java/web/MyLoginManagedBean.java</file>
             <file>file:/C:/Users/User/Desktop/year2_semester_1_stuff/cos30041/all_labs/D/all_work_manager_only_views/Ragib/Ragib-war/src/conf/MANIFEST.MF</file>
+            <file>file:/C:/Users/User/Desktop/year2_semester_1_stuff/cos30041/all_labs/D/all_work_manager_only_views/Ragib/Ragib-war/web/product.xhtml</file>
             <file>file:/C:/Users/User/Desktop/year2_semester_1_stuff/cos30041/all_labs/D/all_work_manager_only_views/Ragib/Ragib-war/web/WEB-INF/web.xml</file>
             <file>file:/C:/Users/User/Desktop/year2_semester_1_stuff/cos30041/all_labs/D/all_work_manager_only_views/Ragib/Ragib-war/src/java/web/MyCustomerManagedBean.java</file>
         </group>
